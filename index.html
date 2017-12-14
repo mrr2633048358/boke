@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bo</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="js/rem.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/iscroll.js"></script>
+    <style>
+        .swiper-slide{
+            width: 20% !important;
+            height: auto;
+            overflow: hidden;
+            margin: 0 !important;
+        }
+    </style>
+</head>
+<body>
+<header class='box'>
+    <p>博闻广记,方显智慧人生</p>
+    <input type="text" placeholder="搜索">
+</header>
+<div id="wrapper">
+    <div id="scroller">
+        <ul>
+            <li class="active">H5</li>
+            <li>Css3</li>
+            <li>flex</li>
+            <li>移动端</li>
+            <li>响应式</li>
+            <li>js</li>
+            <li>jquery</li>
+            <li>插件</li>
+            <li>php</li>
+        </ul>
+    </div>
+</div>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="img/z1.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="img/z2.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="img/z3.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="img/z4.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="img/z5.jpg" alt="">
+        </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+<ul id="main">
+    <li>
+        <a href="list.html">
+            <div class="left">
+                超文本标记语言（ HTML）的第五次重大修改:::H5
+            </div>
+            <div class="right">
+                    <img src="img/z1.jpg" alt="">
+                    <img src="img/z2.jpg" alt="">
+                    <img src="img/z3.jpg" alt="">
+            </div>
+            <div class="qi">
+                <p>本文出自个人博客</p>
+                <p>2017/12/12</p>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="">
+            <div class="left">
+                超文本标记语言（ HTML）的第五次重大修改:::H5
+            </div><!--
+            <div class="right">&lt;!&ndash;
+                <img src="img/h6.jpg" alt="">
+                <img src="img/h6.jpg" alt="">
+                <img src="img/h6.jpg" alt="">&ndash;&gt;
+            </div>-->
+            <div class="qi">
+                <p>本文出自个人博客</p>
+                <p>2017/12/12</p>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="list.html">
+            <div class="left">
+                超文本标记语言（ HTML）的第五次重大修改:::H5
+            </div>
+            <div class="right">
+                <img src="img/z1.jpg" alt="">
+                <img src="img/z2.jpg" alt="">
+                <img src="img/z3.jpg" alt="">
+            </div>
+            <div class="qi">
+                <p>本文出自个人博客</p>
+                <p>2017/12/12</p>
+            </div>
+        </a>
+    </li>
+</ul>
+</body>
+</html>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+//        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    $('.swiper-slide').on('click',function () {
+        location.href="listpic.html";
+    })
+</script>
